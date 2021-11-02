@@ -20,7 +20,7 @@
       <x>310</x>
       <y>210</y>
       <width>191</width>
-      <height>98</height>
+      <height>113</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -44,7 +44,11 @@
         </widget>
        </item>
        <item row="2" column="1">
-        <widget class="QLineEdit" name="lineEdit_Pass"/>
+        <widget class="QLineEdit" name="lineEdit_Pass">
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
        </item>
        <item row="3" column="1">
         <widget class="QPushButton" name="btn">
@@ -60,13 +64,99 @@
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QLabel" name="label_3">
+        <widget class="QLabel" name="Title">
          <property name="text">
           <string>Login</string>
          </property>
         </widget>
        </item>
       </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="img">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>210</y>
+      <width>121</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>170</y>
+      <width>160</width>
+      <height>103</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="3" column="0">
+      <widget class="QRadioButton" name="radioButton_4">
+       <property name="text">
+        <string>Your Sister</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QRadioButton" name="radioButton">
+       <property name="text">
+        <string>Your Mom</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QRadioButton" name="radioButton_3">
+       <property name="text">
+        <string>Your Brother</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QRadioButton" name="radioButton_2">
+       <property name="text">
+        <string>Your Dad</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>280</y>
+      <width>160</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QCheckBox" name="checkBox_2">
+       <property name="text">
+        <string>Cat</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QCheckBox" name="checkBox">
+       <property name="text">
+        <string>Monkey</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QCheckBox" name="checkBox_3">
+       <property name="text">
+        <string>Dog</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -77,11 +167,47 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionClose"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

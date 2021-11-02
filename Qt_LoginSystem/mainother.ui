@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainOther</class>
+ <widget class="QDialog" name="MainOther">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1005</width>
+    <height>490</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>100</y>
+     <width>761</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPlainTextEdit" name="TextField"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="select">
+      <property name="text">
+       <string>select</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QPushButton" name="read">
+        <property name="text">
+         <string>Read</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="write">
+        <property name="text">
+         <string>Write</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="save">
+        <property name="text">
+         <string>SaveAs..</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
